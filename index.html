@@ -8,7 +8,6 @@
 	<meta name="Keywords" content="react, laravel, gdansk, silverstripe">
 	<meta name="google-site-verification" content="jAJmvMNrEQK-zfKpUVjoTgWX9uZaAvEQFVcoDGF2HZM" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<style>
 		body {
 			margin: 0;
@@ -27,21 +26,26 @@
 			width: 100%;
 			height: 100%
 		}
+
 		main {
 			position: relative;
 			z-index: 11;
 			font-family: 'Courier New', Courier, monospace;
-			color:#eee;
+			color: #eee;
 			font-size: 12px;
 			padding: 24px;
-			background: rgba(0,0,0,0.6);
+			background: rgba(0, 0, 0, 0.6);
 			max-width: 600px;
 		}
+
 		a {
-			color:#eee;
+			color: #eee;
 		}
 		a:hover {
 			text-transform: uppercase;
+		}
+		li {
+			display: inline;
 		}
 	</style>
 </head>
@@ -51,22 +55,21 @@
 		<h1>Mateusz Wojczal</h1>
 		<p>
 			Full-stack web developer with 14 years of experience. Starting as an ActionScript developer, I have experience with
-			PHP and JavaScript as well, building websites and applications. Since 2011, I have been leading software house Qunabu
-			Interactive. <br/>
-			I communicate effectively and work well in teams from around the world.  <br/>
+			PHP and JavaScript as well, building websites and applications. Since 2011, I have been leading software house
+			Qunabu
+			Interactive. <br />
+			I communicate effectively and work well in teams from around the world. <br />
 			I considers myself React, Laravel and SilverStripe expert.
 		</p>
 		<p>
 			Find me on:
 		</p>
 		<ul>
-			<li>
-				<a target="_blank" href="https://www.toptal.com/resume/mateusz-wojczal">Toptal</a>
-				<a target="_blank" href="https://www.linkedin.com/in/matthew-wojczal-40766032/">LinkedIn</a>
-				<a target="_blank" href="https://medium.com/@qunabu.com">Medium</a>
-				<a target="_blank" href="https://github.com/qunabu">Github</a>
-				<a target="_blank" href="https://qunabu.com">Qunabu Interactive</a>
-			</li>
+			<li> <a target="_blank" href="https://www.toptal.com/resume/mateusz-wojczal">Toptal</a></li>
+			<li> <a target="_blank" href="https://www.linkedin.com/in/matthew-wojczal-40766032/">LinkedIn</a></li>
+			<li> <a target="_blank" href="https://medium.com/@qunabu.com">Medium</a></li>
+			<li> <a target="_blank" href="https://github.com/qunabu">Github</a></li>
+			<li> <a target="_blank" href="https://qunabu.com">Qunabu Interactive</a></li>
 		</ul>
 	</main>
 	<aside id="gol"></aside>
@@ -123,7 +126,7 @@
 					camera.position.z = 1000;
 					scene = new THREE.Scene();
 					var amount = ROWS * COLS;
-					SQUARE = WIDTH / ROWS;
+					SQUARE = Math.max(WIDTH, HEIGHT) / ROWS;
 					var radius = 200;
 					var positions = new Float32Array(amount * 3);
 					var colors = new Float32Array(amount * 3);
@@ -133,8 +136,8 @@
 					var i = 0;
 					for (var x = 0; x < COLS; x++) {
 						for (var y = 0; y < ROWS; y++) {
-							vertex.x = SQUARE * x - WIDTH / 2;
-							vertex.y = SQUARE * y - WIDTH / 2;
+							vertex.x = SQUARE * x - Math.max(WIDTH, HEIGHT) / 2;
+							vertex.y = SQUARE * y - Math.max(WIDTH, HEIGHT) / 2;
 							vertex.z = (Math.random() * 2 - 1) * radius;
 							vertex.z = 0;
 							vertex.toArray(positions, i * 3);
