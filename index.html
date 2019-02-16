@@ -175,9 +175,6 @@
 							},
 							color: {
 								value: new THREE.Color(0xffffff)
-							},
-							texture: {
-								value: new THREE.TextureLoader().load("pixel.png")
 							}
 						},
 						vertexShader: `
@@ -185,8 +182,10 @@
         attribute float size;
         attribute vec3 customColor;
         varying vec3 vColor;
+		varying float zeroSize;
         void main() {
             vColor = customColor;
+			zeroSize = size;
             vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
             gl_PointSize = size * ( 300.0 / -mvPosition.z );
             gl_Position = projectionMatrix * mvPosition;
@@ -194,11 +193,10 @@
 
 						fragmentShader: `
         uniform vec3 color;
-        uniform sampler2D texture;
         varying vec3 vColor;
+		varying float zeroSize;
         void main() {
-            gl_FragColor = vec4( color * vColor, 1.0 );
-            gl_FragColor = gl_FragColor * texture2D( texture, gl_PointCoord );
+            gl_FragColor = vec4( color , zeroSize);
         }        
         `,
 						blending: THREE.AdditiveBlending,
@@ -245,6 +243,19 @@
 			check();
 		})();
 	</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134623523-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-134623523-1');
+	</script>
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134623523-1"></script>
 	<script>
