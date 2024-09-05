@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<!--
+  <!--
 /***
  *    ╔╦╗┌─┐┌┬┐┌─┐┬ ┬┌─┐┌─┐  ╦ ╦┌─┐ ┬┌─┐┌─┐┌─┐┬  
  *    ║║║├─┤ │ ├┤ │ │└─┐┌─┘  ║║║│ │ ││  ┌─┘├─┤│  
@@ -9,253 +9,380 @@
  */
 -->
 
-<head>
-	<meta charset=utf-8>
-	<title>Mateusz Wojczal // Fullstack programmer.</title>
-	<meta name="Description" content="Mateusz is a full-stack web developer with 14 years of experience. Starting as an ActionScript developer, he has experience with PHP and JavaScript as well, building websites and applications. Since 2011, he has led software house Qunabu Interactive. He communicates effectively and works well in teams from around the world. He considers himself a React, Laravel and SilverStripe expert.">
-	<meta name="Keywords" content="react, laravel, gdansk, silverstripe">
-	<meta name="google-site-verification" content="jAJmvMNrEQK-zfKpUVjoTgWX9uZaAvEQFVcoDGF2HZM" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-		body {
-			margin: 0;
-			background: black;
-		}
+  <head>
+    <meta charset="utf-8" />
+    <title>Mateusz Wojczal // Fullstack programmer.</title>
+    <meta
+      name="Description"
+      content="Mateusz is a full-stack web developer with 19 years of experience. Starting as an ActionScript developer, he has experience with PHP and JavaScript as well, building websites and applications. Since 2011, he has led software house Qunabu Interactive. He communicates effectively and works well in teams from around the world. He considers himself a React, Laravel and SilverStripe expert."
+    />
+    <meta name="Keywords" content="react, laravel, gdansk, silverstripe" />
+    <meta
+      name="google-site-verification"
+      content="jAJmvMNrEQK-zfKpUVjoTgWX9uZaAvEQFVcoDGF2HZM"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        background: black;
+      }
 
-		aside {
-			position: fixed;
-			left: 0;
-			top: 0;
-			width: 100%;
-			height: 100%;
-		}
+      aside {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
 
-		canvas {
-			width: 100%;
-			height: 100%
-		}
+      canvas {
+        width: 100%;
+        height: 100%;
+        /* transform: scale3d(3, 3, 1); */
+      }
 
-		main {
-			position: relative;
-			z-index: 11;
-			font-family: 'Courier New', Courier, monospace;
-			color: #eee;
-			font-size: 12px;
-			padding: 24px;
-			background: rgba(0, 0, 0, 0.6);
-			max-width: 600px;
-		}
+      main {
+        position: relative;
+        z-index: 11;
+        font-family: "Courier New", Courier, monospace;
+        color: #eee;
+        font-size: 12px;
+        padding: 24px;
+        background: rgba(0, 0, 0, 0.6);
+        max-width: 600px;
+        /* visibility: hidden; */
+      }
 
-		a {
-			color: #eee;
-		}
+      a {
+        color: #eee;
+      }
 
-		a:hover {
-			text-transform: uppercase;
-		}
+      a:hover {
+        text-transform: uppercase;
+      }
 
-		li {
-			display: inline;
-		}
-	</style>
-</head>
+      ul {
+        list-style-type: square;
+      }
+      li {
+        margin-right: 2em;
+      }
+    </style>
+  </head>
 
-<body>
-	<main>
-		<h1>Mateusz Wojczal</h1>
-		<p>
-			Full-stack web developer with 14 years of experience. Starting as an ActionScript developer, I have experience with
-			PHP and JavaScript as well, building websites and applications. Since 2011, I have been leading software house
-			Qunabu
-			Interactive, <br />
-			now Escolasoft, where I held Chief Technology Officer role. 
-			I communicate effectively and work well in teams from around the world. <br />
-			I considers myself React, Laravel and SilverStripe expert.
-		</p>
-		<p>
-			Find me on:
-		</p>
-		<ul>
-			<li> <a target="_blank" href="https://www.toptal.com/resume/mateusz-wojczal">Toptal</a></li>
-			<li> <a target="_blank" href="https://www.linkedin.com/in/matthew-wojczal-40766032/">LinkedIn</a></li>
-			<li> <a target="_blank" href="https://mateusz-wojczal.medium.com/">Medium</a></li>
-			<li> <a target="_blank" href="https://github.com/qunabu">Github</a></li>
-			<li> <a target="_blank" href="https://escolasoft.com">Escolasoft.com (ex Qunabu Interactive)</a></li>
-		</ul>
-	</main>
-	<aside id="gol"></aside>
-	<script defer async src="https://threejs.org/build/three.js"></script>
-	<script>
-		(function () {
+  <body>
+    <main>
+      <h1>Mateusz Wojczal</h1>
+      <p>
+        Full-stack web developer/DevOps since 2005. Starting as an expert in
+        ActionScript, throughout my career, I have gained commercial experience
+        coding in PHP, JavaScript, Node.js, and other technologies that nobody
+        remembers anymore, ultimately choosing TypeScript as a versatile
+        language. From the very beginning, I have been involved in creating web
+        applications and websites, desktop applications based on web
+        technologies, as well as small and large-scale multimedia and
+        interactive exhibits. Since 2011, I have been the founder of the
+        software house Qunabu, and since 2019, the Chief Technology Officer at
+        Escola. I am the creator of the first headless open-source LMS system
+        called Wellms. I am the author of the Escola DevTalk and Philosophy of
+        Programming technology podcasts, promoting knowledge sharing. I am a
+        workshop trainer, a judge at hackathons, and a frequent speaker at
+        technology conferences. I am the organizer of the Gdańsk TypeScript
+        Meetup and passionate about functional programming, automated testing,
+        the history of programming, and DevOps. I am an evangelist of Domain
+        Driven Design, a facilitator, and an Event Storming modeler.
+      </p>
+      <p>Find me on:</p>
+      <ul>
+        <li>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/matthew-wojczal-40766032/"
+            >LinkedIn</a
+          >
+        </li>
+        <li><a target="_blank" href="https://github.com/qunabu">Github</a></li>
+        <li>
+          <a
+            target="_blank"
+            href="https://www.toptal.com/resume/mateusz-wojczal"
+            >Toptal</a
+          >
+        </li>
 
-			var ROWS = 250;
-			var COLS = 250;
+        <li>
+          <a target="_blank" href="https://mateusz-wojczal.medium.com/"
+            >Medium</a
+          >
+        </li>
+        <li>
+          <a target="_blank" href="https://escolasoft.com"
+            >Escolasoft.com (ex Qunabu Interactive)</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://www.meetup.com/escola-gda%C5%84sk-meetup-group/"
+          >
+            Gdansk TypeScript Meetup
+          </a>
+        </li>
+        <li>
+          <a href="https://sessionize.com/mateusz-wojczal" target="_blank"
+            >sessionize</a
+          >
+        </li>
+        <li>
+          <a href="https://www.wellms.io/" target="_blank">
+            Wellms Headless LMS
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/results?search_query=mateusz+wojczal"
+            target="_blank"
+            >YouTube</a
+          >
+        </li>
+        <li>
+          <a href="https://filozofiaprogramowania.escola.pl/" target="_blank"
+            >Filozofia Programowania podcast</a
+          >
+        </li>
+      </ul>
+      <p>What I can do technically:</p>
+      <ul>
+        <li>PHP</li>
+        <li>JavaScript & TypeScript</li>
+        <li>Node.js</li>
+        <li>Software Architecture</li>
+        <li>Software Testing</li>
+        <li>Diagram (UML) Modeling</li>
+        <li>Gitlab CI/CD</li>
+        <li>Docker</li>
+        <li>DDD Domain Driven Design (sometimes Deadline Driven Design)</li>
+        <li>React.js</li>
+        <li>Modularized Monoliths and Microservices</li>
+        <li>AWS</li>
+        <li>Kubernetes</li>
+        <li>Terraform</li>
+        <li>Dev Sec Ops</li>
+      </ul>
+      <p>What I usually do:</p>
+      <ul>
+        <li>Solving complex tasks</li>
+        <li>Knowledge sharing</li>
+        <li>Public speaker</li>
+        <li>Strategic Technology Leadership</li>
+        <li>Team Building & Recruitment</li>
+        <li>Event Storming facilitator</li>
+        <li>Open source contributor</li>
+        <li>Organizing meetups</li>
+        <li>StakeholderCommunication</li>
+        <li>Budget and Resource Allocation</li>
+        <li>IT Operations Management</li>
+      </ul>
+      <p>Where I have spoken:</p>
+      <ul>
+        <li><a href="https://phpcon.pl/" target="_blank">PHPCon</a></li>
+        <li>
+          <a href="https://4developers.org.pl/" target="_blank">4developers</a>
+        </li>
+        <li>
+          <a href="https://conf.strapi.io/" target="_blank">StrapiConf</a>
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/watch?v=PIDMyGvIdzY&t=2s"
+            target="_blank"
+            >PHPCircle</a
+          >
+        </li>
+        <li>
+          <a href="https://warszawskiedniinformatyki.pl/" target="_blank"
+            >Warszawskie Dni Informatyki</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.meetup.com/pl-PL/escola-gda%C5%84sk-meetup-group/"
+            target="_blank"
+            >Gdansk TypeScript Meetup</a
+          >
+        </li>
+        <li>
+          <a href="https://bitconf.pl/" target="_blank">bitConf</a>
+        </li>
+        <li>
+          <a href="https://summit.phpers.pl/pl/" target="_blank">PHP Summit </a>
+        </li>
+        <li>
+          <a href="https://42warsaw.pl/pl/" target="_blank">42Warsaw</a>
+        </li>
+        <li>
+          <a href="https://mobiletrends.pl/" target="_blank">mobileTrends</a>
+        </li>
+      </ul>
+    </main>
+    <aside id="gol"></aside>
 
-			/** returns a random 0:1 Int8Array array */
-			function randomArray8(width = COLS, height = ROWS) {
-				return (new Int8Array(COLS * ROWS)).fill(0).map((row) => {
-					return Math.random() >= 0.7 ? 1 : 0;
-				});
-			}
+    <script>
+      // Code below is taken from https://github.com/xem/webgl-guide/blob/gh-pages/lib/webgl.js
+      // which is a part of awesome https://xem.github.io/articles/webgl-guide.html
+      // article by Maxime Euzière about WebGL introduction
+      // Compile a WebGL program from a vertex shader and a fragment shader
+      const compile = (gl, vshader, fshader) => {
+        const vs = gl.createShader(gl.VERTEX_SHADER);
+        gl.shaderSource(vs, vshader);
+        gl.compileShader(vs);
+        const fs = gl.createShader(gl.FRAGMENT_SHADER);
+        gl.shaderSource(fs, fshader);
+        gl.compileShader(fs);
+        const program = gl.createProgram();
+        gl.attachShader(program, vs);
+        gl.attachShader(program, fs);
+        gl.linkProgram(program);
+        gl.useProgram(program);
+        console.log("vertex shader:", gl.getShaderInfoLog(vs) || "OK");
+        console.log("fragment shader:", gl.getShaderInfoLog(fs) || "OK");
+        console.log("program:", gl.getProgramInfoLog(program) || "OK");
+        return program;
+      };
 
-			/** GAME OF LIFE, gets one state of game, and returns nexts */
-			function gol8(state = null) {
-				return state.map((value, i) => {
-					//let x = i % COLS;
-					//let y = Math.floor(i/ROWS);
-					let liveNeighbours = [i - COLS - 1, i - COLS, i - COLS + 1, i - 1, i + 1, i + COLS - 1, i + COLS, i + COLS + 1]
-						.filter((neighbour) => {
-							return state[neighbour] == undefined ? false : state[neighbour] == 1;
-						}).length;
-					return value == 1 ? (liveNeighbours == 2 || liveNeighbours == 3) ? 1 : 0 : liveNeighbours == 3 ? 1 : 0;
+      const gol8 = (state = null) => {
+        return state.map((value, i) => {
+          let liveNeighbours = [
+            i - COLS - 1,
+            i - COLS,
+            i - COLS + 1,
+            i - 1,
+            i + 1,
+            i + COLS - 1,
+            i + COLS,
+            i + COLS + 1,
+          ].filter((neighbour) => {
+            return state[neighbour] == undefined
+              ? false
+              : state[neighbour] == 1;
+          }).length;
+          return value == 1
+            ? liveNeighbours == 2 || liveNeighbours == 3
+              ? 1
+              : 0
+            : liveNeighbours == 3
+            ? 1
+            : 0;
+        });
+      };
 
-				});
-			}
+      // Get the WebGL rendering context
 
-			/** function that checks if THREE is loaded */
-			function check() {
-				return typeof THREE === 'undefined' ? setTimeout(check, 100) : initGameOfLife();
-			}
+      const width = window.innerWidth / 2;
+      const height = window.innerHeight / 2;
 
-			/** inits game of life there.js version */
-			function initGameOfLife() {
-				var renderer, scene, camera, stats;
-				var sphere;
-				var WIDTH = window.innerWidth;
-				var HEIGHT = window.innerHeight;
-				var SQUARE = 10;
-				var SQAURE_PLUS = 10;
+      const ROWS = height;
+      const COLS = width;
 
-				/** initial state */
-				var state = gol8(randomArray8());
+      function randomArray8(width = COLS, height = ROWS) {
+        return new Int8Array(COLS * ROWS).fill(0).map((row) => {
+          return Math.random() >= 0.3 ? 1 : 0;
+        });
+      }
 
-				init();
-				animate();
+      const canvas = document.createElement("canvas");
+      canvas.setAttribute("width", width);
+      canvas.setAttribute("height", height);
+      document.getElementById("gol").appendChild(canvas);
+      // Actual Code starts here
+      // WebGL canvas context
+      const gl = canvas.getContext(
+        "webgl" /* { preserveDrawingBuffer: true } */
+      );
 
-				function init() {
-					camera = new THREE.PerspectiveCamera(40, WIDTH / HEIGHT, 1, 10000);
-					camera.position.z = 1000;
-					scene = new THREE.Scene();
-					var amount = ROWS * COLS;
-					SQUARE = Math.max(WIDTH, HEIGHT) / ROWS;
-					var radius = 200;
-					var positions = new Float32Array(amount * 3);
-					var colors = new Float32Array(amount * 3);
-					var sizes = new Float32Array(amount);
-					var vertex = new THREE.Vector3();
-					var color = new THREE.Color(0xffffff);
-					var i = 0;
-					for (var x = 0; x < COLS; x++) {
-						for (var y = 0; y < ROWS; y++) {
-							vertex.x = SQUARE * x - Math.max(WIDTH, HEIGHT) / 2;
-							vertex.y = SQUARE * y - Math.max(WIDTH, HEIGHT) / 2;
-							vertex.z = (Math.random() * 2 - 1) * radius;
-							vertex.z = 0;
-							vertex.toArray(positions, i * 3);
-							if (vertex.x < 0) {
-								//color.setHSL(0.5 + 0.1 * (i / amount), 0.7, 0.5);
-							} else {
-								//color.setHSL(0.0 + 0.1 * (i / amount), 0.9, 0.5);
-							}
-							color.toArray(colors, i * 3);
-							sizes[i] = SQUARE + SQAURE_PLUS;
-							//visible[i] = 0;
-							i++;
-						}
-					}
+      // Vertex shader
+      const vshader = `
+attribute vec4 position;
+attribute float size;
+void main() {
+  gl_Position = position;
+  gl_PointSize = size;
+}`;
 
-					var geometry = new THREE.BufferGeometry();
-					geometry.addAttribute('position', new THREE.BufferAttribute(positions, 3));
-					geometry.addAttribute('customColor', new THREE.BufferAttribute(colors, 3));
-					geometry.addAttribute('size', new THREE.BufferAttribute(sizes, 1));
+      // Fragment shader
+      const fshader = `
+precision mediump float;
+uniform vec4 color;
+void main() {
+  gl_FragColor = color;
+}`;
 
-					var material = new THREE.ShaderMaterial({
-						uniforms: {
-							amplitude: {
-								value: 1.0
-							},
-							color: {
-								value: new THREE.Color(0xffffff)
-							}
-						},
-						vertexShader: `
-        uniform float amplitude;
-        attribute float size;
-        attribute vec3 customColor;
-        varying vec3 vColor;
-		varying float zeroSize;
-        void main() {
-            vColor = customColor;
-			zeroSize = size;
-            vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
-            gl_PointSize = size * ( 300.0 / -mvPosition.z );
-            gl_Position = projectionMatrix * mvPosition;
-        }`,
+      // Compile program
+      const program = compile(gl, vshader, fshader);
 
-						fragmentShader: `
-        uniform vec3 color;
-        varying vec3 vColor;
-		varying float zeroSize;
-        void main() {
-            gl_FragColor = vec4( color , zeroSize);
-        }        
-        `,
-						blending: THREE.AdditiveBlending,
-						depthTest: false,
-						transparent: true
-					});
+      // Get shaders attributes and uniforms
+      const position = gl.getAttribLocation(program, "position");
+      const size = gl.getAttribLocation(program, "size");
+      const color = gl.getUniformLocation(program, "color");
 
-					sphere = new THREE.Points(geometry, material);
-					scene.add(sphere);
+      // Set the clear color
+      gl.clearColor(0.0, 0.0, 0.0, 1.0);
 
-					renderer = new THREE.WebGLRenderer();
-					renderer.setPixelRatio(window.devicePixelRatio);
-					renderer.setSize(WIDTH, HEIGHT);
-					var container = document.getElementById('gol');
-					container.appendChild(renderer.domElement);
-					window.addEventListener('resize', onWindowResize, false);
-				}
+      // Clear
+      gl.clear(gl.COLOR_BUFFER_BIT);
 
-				function onWindowResize() {
-					camera.aspect = window.innerWidth / window.innerHeight;
-					camera.updateProjectionMatrix();
-					renderer.setSize(window.innerWidth, window.innerHeight);
-				}
+      const xPos = (x) => (x - width / 2) / (width / 2);
+      const yPos = (y) => (y - height / 2) / (height / 2);
+      const dx = 1 / width;
+      const dy = 1 / height;
 
-				function animate() {
-					requestAnimationFrame(animate);
-					render();
-					state = gol8(state);
-				}
+      // initial game state
 
-				function render() {
-					var time = Date.now() * 0.005;
-					sphere.rotation.z = 0.01 * time;
-					var geometry = sphere.geometry;
-					var attributes = geometry.attributes;
-					var i = 0;
-					state.forEach((value, i) => {
-						attributes.size.array[i] = value == 1 ? SQUARE + SQAURE_PLUS : 0;
-					});
-					attributes.size.needsUpdate = true;
-					renderer.render(scene, camera);
-				}
-			}
-			check();
-		})();
-	</script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134623523-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
+      let state = gol8(randomArray8());
 
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag('js', new Date());
-		gtag('config', 'UA-134623523-1');
-	</script>
+      // Add a new random point every 500ms
+      const step = () => {
+        state = gol8(state);
 
-</body>
+        state.forEach((ent, i) => {
+          if (!ent) {
+            return;
+          }
+          let x = i % width;
+          let y = Math.floor(i / height);
 
+          x = xPos(x + 1) + dx;
+          y = yPos(y + 1) + dy;
+
+          gl.vertexAttrib3f(position, x, y, 0);
+          gl.vertexAttrib1f(size, 2);
+          gl.uniform4f(color, Math.random(), 0, 0, 1);
+          gl.drawArrays(gl.POINTS, 0, 1);
+        });
+      };
+
+      let shouldAnimate = true;
+      let shouldAnimateT = 0;
+
+      window.addEventListener("mousemove", (e) => {
+        shouldAnimate = true;
+        clearTimeout(shouldAnimateT);
+        shouldAnimateT = setTimeout(() => (shouldAnimate = false), 100);
+      });
+
+      window.addEventListener("click", (e) => {
+        state = gol8(randomArray8());
+        shouldAnimate = true;
+        shouldAnimateT = setTimeout(() => (shouldAnimate = false), 1000);
+      });
+
+      const anim = () => {
+        shouldAnimate && step();
+        requestAnimationFrame(anim);
+      };
+
+      window.requestAnimationFrame(anim);
+    </script>
+  </body>
 </html>
